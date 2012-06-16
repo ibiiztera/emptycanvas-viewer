@@ -28,7 +28,7 @@ public class Viewer extends javax.swing.JFrame {
 
     private boolean boucle = true;
     private File directory;
-
+    public int fps = 25;
     /**
      * Creates new form Viewer
      */
@@ -278,6 +278,7 @@ public class Viewer extends javax.swing.JFrame {
          */
         java.awt.EventQueue.invokeLater(new Runnable() {
 
+            @Override
             public void run() {
                 new Viewer().setVisible(true);
             }
